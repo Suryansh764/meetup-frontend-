@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Events = ({ searchQuery }) => {
-  const { data, loading, error } = useFetch("http://localhost:3000/events");
+  const { data, loading, error } = useFetch("https://meetup-backend-psi.vercel.app/events");
 
   const [event, setEvent] = useState("Both");
 
